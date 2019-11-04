@@ -1,0 +1,257 @@
+
+* {
+    box-sizing: border-box;
+  }
+  * {
+      scroll-behavior: smooth;
+  }
+          /*scroll bar*/
+  /* width */
+  ::-webkit-scrollbar {
+      width: 8px;
+  }
+    
+  /* Track */
+  ::-webkit-scrollbar-track {
+      box-shadow: inset 0 0 5px black; 
+      border-radius: 10px;
+  }
+     
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+      background: #145374; 
+      border-radius: 8px;
+  }
+    
+    /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+      background: #5588a3; 
+  }
+  
+    /*las secciones del cv se les da un ID ya que algunos margenes son diferentes*/
+  #parrafito{
+      margin-bottom: 80px;
+  }
+  #presentation{
+      margin-top: 40px;
+      margin-bottom: 100px;
+  }
+  #formation{
+      margin-bottom: 100px;
+  }
+  #formacomple{
+      margin-bottom: 100px;
+  }
+  #expe{
+      margin-bottom: 135px;
+  }
+  body{
+      background-color:#e8e8e8;
+  }
+  .columna {
+    float: right;
+    padding: 15px;
+  }
+  
+  /*style of menu, transition "scale-" in hover*/
+  .menusito{
+    transform: scale(1);
+    -ms-transform: scale(1);
+    -moz-transform: scale(1);
+    -webkit-transform: scale(1);
+    -o-transform: scale(1);
+    -webkit-transition: all 500ms ease-in-out;
+    -moz-transition: all 500ms ease-in-out;
+    -ms-transition: all 500ms ease-in-out;
+    -o-transition: all 500ms ease-in-out;
+  }
+  .menusito:hover{
+      transform: scale(0.95);
+    -ms-transform: scale(0.95);
+    -moz-transform: scale(0.95);
+    -webkit-transform: scale(0.95);
+    -o-transform: scale(0.95);
+  }
+  
+  /*se establecen configuraciones totales al div*/
+  .clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+  /*configuración de encabezados serif, color, border*/
+  h1{
+      font-family: 'Noto Sans TC', sans-serif;
+  }
+  h2{
+      color:#2470a0;
+      font-size:18px;
+      font-family: 'Roboto', sans-serif;
+      border-bottom:5px groove #a696c8
+  }
+  h3{
+      color:#2470a0;
+      font-size:18px;
+      font-family: 'Roboto', sans-serif;
+  }
+  
+  /*lista de datos del elemento principal del CV*/
+  #lista1 ul { 
+      list-style:none; 
+  }
+  #lista1 ul li { 
+      font-family: 'Roboto Mono', monospace;
+      letter-spacing: +5px;
+      border-bottom:1px dashed #2470a0;
+  }
+  /*espaciado de la lista de formacion complementaria*/
+  .compex dl{
+      margin-bottom: 30px;
+  }
+  /*segunda lista de formacion extra, se extablecen espaciado, serif, font,margin*/
+  #lista2 ul{
+      list-style:none;
+      margin:0;
+      padding:0;
+  }
+  #lista2 ul li{
+      font-family: 'Inconsolata', monospace;
+      text-align: justify;
+      color:#2470a0;
+      font-size:16px;
+      font-weight: bold;
+      margin-bottom: 25px;
+  }
+  /*link a linkedin, no se cuenta con div por lo que se llama la etiqueta directamente, se le aplica un :hover con color especifico*/
+  a{
+      color: #a696c8;
+  }
+  a:hover{
+      color:#2470a0;
+  }
+  
+  /*configuracion complementaria a las secciones del CV, background, paadding, border*/
+  .secciones{
+      background-color:rgba(255, 255, 255, 0.795);
+      padding:20px;
+      margin:10px;
+      border-radius: 5px;
+      border-style: outset;
+      border-color:rgb(238, 235, 235) ;
+  }
+  /* estilado del parrafo del elemento principal y de las listas de formacion*/
+  p{
+      font-family: 'Inconsolata', monospace;
+      text-align: justify;
+      font-size:16px;
+  }
+  dl{
+      font-family: 'Inconsolata', monospace;
+      font-size:15px;
+      text-align: justify;
+  }
+  dt{
+      color:#2470a0;
+      font-size:16px;
+      font-weight: bold;
+  }
+  
+  /*se establece como se verá el elemento seleccionado, con un backgroun y el color que tomara el elemento*/
+  *::selection{
+      background: #2470a0;
+      color: white;
+  }
+  
+  /*se estilan los iconos del porfolio para generar una transición :hover*/
+  .porto{
+      widows: 89px;
+      height: 89px;
+      float:left;
+  
+      -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    transform: scale(1);
+    -ms-transform: scale(1);
+    -moz-transform: scale(1);
+    -webkit-transform: scale(1);
+    -o-transform: scale(1);
+    -webkit-transition: all 500ms ease-in-out;
+    -moz-transition: all 500ms ease-in-out;
+    -ms-transition: all 500ms ease-in-out;
+    -o-transition: all 500ms ease-in-out;
+  }
+  .porto:hover{
+    transform: scale(0.8);
+    -ms-transform: scale(0.8);
+    -moz-transform: scale(0.8);
+    -webkit-transform: scale(0.8);
+    -o-transform: scale(0.8);
+  }
+  
+  /* se establecen las caracteriticas de la seccion portfolio*/
+  #listaimg ul { 
+      list-style:none; 
+  }
+  #porta{
+      overflow: auto;
+      margin-top: 280px;
+      margin-bottom: 400px;
+  }
+  
+  /*diferencia entre menu y contenido, se fija el menu a la pantalla*/
+  .menu {
+    width: 25%;
+    height:100%;
+  position:fixed;
+  }
+  
+  .contenido {
+    width: 75%;
+  }
+  
+  /* estilado del menu, transition y redireccionamiento a distintos lugares del CV*/
+  .menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .menu li {
+    padding: 8px;
+    margin-bottom: 8px;
+    background-color: #5588a3;
+    color: #ffffff;
+    border-radius: 5px;
+    font-family: 'Inconsolata', monospace;
+    letter-spacing: +1px;
+  }
+  
+  .menu li:hover {
+    background-color: #145374;
+  }
+  .menu a{
+      color: #e8e8e8;
+      text-decoration:none
+  }
+  .menu a:hover{
+      color:#a696c8;
+  }
+  
+  /*imagen adjuntada al menú, contiene una leve transicion como hover*/
+  .imgRedonda {
+      width:200px;
+      height:200px;
+      border-radius:150px;
+      border:6px solid #2470a09a;
+  }
+  .imgRedonda:hover{
+      transform: scale(0.95);
+      opacity: 0.7;
+      transition: 500ms;
+  }
+  
